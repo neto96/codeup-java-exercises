@@ -12,9 +12,10 @@ public class TableOfPowers {
             System.out.print("Enter a number: ");
             userNum = sc.nextInt();
             for (int i = 1; i <= userNum; i++) {
-                System.out.println("    Squares                 Cubes          ");
+                System.out.println("    Square of " + i + "           Cube of " + i + "          ");
                 System.out.println("-------------------------------------------");
-                System.out.println("      " + (i * i) + "                     " + (i*i*i) + "        ");
+                System.out.println("      " + (int)(Math.pow(i, 2)) + "                     " + (int)(Math.pow(i, 3)) + "        ");
+
             }
 
             System.out.print("Do you want to enter another number? (y/n) ");
